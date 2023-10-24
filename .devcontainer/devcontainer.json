@@ -1,0 +1,11 @@
+{
+  "name": "Java 17 Development Environment",
+  "image": "mcr.microsoft.com/vscode/devcontainers/java:17",
+  "extensions": ["vscjava.vscode-java-pack"],
+  "settings": {
+    "java.home": "/usr/lib/jvm/java-17-openjdk-amd64"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "echo 'Java 17 environment created.'",
+  "mounts": ["source=.,target=/workspace,type=volume"]
+}
